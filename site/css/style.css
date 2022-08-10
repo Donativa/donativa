@@ -1,25 +1,20 @@
 /* Estilos gerais*/
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-html, body {
+html,
+body {
     font-family: "Roboto", arial, lucida;
     width: 100%;
     height: 100%;
     align-items: flex-end;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
-
-#header{
+#header {
     align-items: center;
     background: #fff;
     width: 100%;
-    margin: 0; 
-} 
-
-#header{
-
-    
+    margin: 0;
 }
 
 .row {
@@ -30,9 +25,12 @@ html, body {
 }
 
 .nav {
-    width: 100%
-    height: 100%;    
-} 
+    width: 100%;
+    height: 100%;
+}
+.btn-top{
+    width: 9rem;
+}
 
 .btn:hover {
     background: #2b7fce;
@@ -40,22 +38,19 @@ html, body {
     border-color: #b10a79;
 }
 
-
-
 /* estilos nav bar*/
 
 .logo {
-position: fixed;
-transition: all ease-in-out 1s;
-padding: 10px 15px;
-height: 50px;
-z-index: 9997;
-top: 0;
-left: 0;
+    position: fixed;
+    transition: all ease-in-out 1s;
+    padding: 10px 15px;
+    height: 50px;
+    z-index: 9997;
+    top: 0;
+    left: 0;
 }
 
-
-@media (max-width: 300px){
+@media (max-width: 300px) {
 
     .logo {
         display: none;
@@ -67,16 +62,16 @@ left: 0;
     font-size: 16px;
     color: grey;
     align-items: center;
-      
+
 }
 
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover > a {
+.nav-menu li:hover>a {
     text-decoration: none;
     color: #b10a79;
-    lign-items: center;
+    align-items: center;
 }
 
 #navbar-item .navbar-nav {
@@ -87,10 +82,9 @@ left: 0;
 
 /* estilos section*/
 
-#main{
+#main {
     margin-top: 0px;
 }
-
 
 section#inicio {
     width: 100%;
@@ -117,23 +111,21 @@ span#submensagem {
     height: 75px;
 }
 
-.faixa i{
+.faixa i {
     color: black;
     size: 50px;
-    height: 75px
-    font-size: 
+    height: 75px;
     align-items: center;
 }
 
-
 .faixa a i,
-.faixa a:focus i{
+.faixa a:focus i {
     align-items: center;
     font-size: 25px;
     padding-right: 6rem;
 }
 
-.social-links a:hover{
+.social-links a:hover {
     padding: 0;
     background: #b10a79;
     margin-right: 0;
@@ -142,68 +134,74 @@ span#submensagem {
     text-decoration: none;
 }
 
-
-.img-fluid{
+.img-fluid {
     width: 100%;
     height: auto;
 }
 
 /* Estilos de Cards  */
 
-.card{
+.card {
     width: 18rem;
+    height: 33rem;
     border-radius: 10px;
-    border:none;
     box-shadow: 6px 4px 6px #000;
-    color: #000;
     justify-content: center;
     align-items: center;
 }
 
-.col{
-display: flex;
-align-items: center;
-justify-content: center;
-padding-bottom: 2rem;
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
 }
 
-.card #img-card{
-    
-    border-radius:10px 10px 0 0;
-    width:100%;
+#img-card {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.card-text {
+figure {
+    height: 100%;
+}
+
+.texto-card {
+    position: absolute;
+    margin: 80% 10px 0 10px;
     text-align: center;
-    padding: 0;   
-
 }
 
-.card-text h3, h5{
+.card-text h3,
+h5 {
     text-align: center;
-    padding: 0;
     color: #b10a79;
-    margin-bottom: 2px; 
 }
 
-.carousel-control-prev{
-
+.carousel-control-prev {
     margin-left: -4rem;
 }
 
-.carousel-control-next{
-
+.carousel-control-next {
     margin-right: -4rem;
 }
 
-.carousel-indicators{
+.carousel-indicators {
     margin-bottom: -15px;
 }
 
-h3, h2, h5{
+h3,
+h2,
+h5 {
     text-align: center;
-    padding: 0;
-    color: #b10a79; 
+    color: #b10a79;
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .texto-card {
+        position: absolute;
+        margin-top: 70%;
+    }
 }
 
 /* Estilos tela de login*/
@@ -249,13 +247,13 @@ a {
     display: flex;
 }
 
-.form-login{
+.form-login {
 
     background: #fff;
 
 }
 
-.form{
+.form {
     height: 100%;
     width: 50%;
     display: flex;
@@ -292,17 +290,20 @@ a {
         width: 100%;
         justify-content: space-evenly;
     }
+
     .form-cadastro {
         position: absolute;
         transform: translateX(100);
     }
+
     .login-container.move .form-cadastro {
         transform: translateX(0%);
     }
 }
 
 .form-title-ligth {
-    color: #fff}
+    color: #fff
+}
 
 .form-social {
     display: flex;
@@ -339,7 +340,7 @@ a {
     padding: 10px 20px;
     border-style: none;
     background-color: #e4e4e4;
-    
+
 }
 
 .form-button {
@@ -358,8 +359,8 @@ a {
 }
 
 .form-button:hover {
-    background-color:#2b7fce;
-    color: #fff;    
+    background-color: #2b7fce;
+    color: #fff;
 }
 
 .form-button-light {
@@ -416,6 +417,7 @@ a {
     .mobile-text {
         display: block;
     }
+
     .mobile-text a {
         font-weight: 900;
         color: inherit;
@@ -424,23 +426,22 @@ a {
 
 /* Estilos da página de Cadastro Beneficiado - Doadores*/
 
-section#cadastroBeneficiado{
+section#cadastroBeneficiado {
     margin-top: 0;
     align-items: center;
     align-content: center;
-    
+
 }
 
 .form#cadastro {
-    
     margin: 0 auto;
     padding: 50px;
     border: none;
     margin-top: 500;
     display: block;
-    position:relative;
+    position: relative;
     width: 750px;
-    height: auto; 
+    height: auto;
     justify-content: center;
     align-items: center;
     background-color: #e4e4e4;
@@ -467,7 +468,7 @@ select {
     border-radius: 10px;
     height: 30px;
     border: none;
-    
+    margin-bottom: 10px;
 }
 
 input[type='submit'] {
@@ -611,6 +612,7 @@ section#paginacontato {
         width: auto;
         padding: auto;
     }
+
     .container .content .right-side {
         width: auto;
         margin-left: auto;
@@ -622,9 +624,11 @@ section#paginacontato {
         margin: auto;
         height: auto;
     }
+
     .container .content {
         flex-direction: column-reverse;
     }
+
     .container .content .left-side {
         width: auto;
         flex-direction: row;
@@ -632,9 +636,11 @@ section#paginacontato {
         justify-content: center;
         flex-wrap: wrap;
     }
+
     .container .content .left-side::before {
         display: none;
     }
+
     .container .content .right-side {
         width: auto;
         margin-left: auto;
@@ -647,51 +653,51 @@ section#paginacontato {
 .btn#btn-enviar {
     color: #b10a79;
     border-color: #2b7fce;
-    
-    }
-    
+
+}
+
 #btn-enviar:hover {
-        background: #2b7fce;
-        color: #fff;
+    background: #2b7fce;
+    color: #fff;
 }
 
 
 /* Estilo de Footer*/
 
-#footer{
+#footer {
     padding: 10px;
     z-index: 1000;
     transition: 0.5s;
     background-color: #e4e4e4;
 }
 
-#footer span{
-    color:#b10a79;
+#footer span {
+    color: #b10a79;
 }
 
 @media(max-widht: 1000px) {
-#footer{
-    position: static;
-    width: auto;
-}
+    #footer {
+        position: static;
+        width: auto;
+    }
 
 }
 
 /* scroll ajustes */
 ::-webkit-scrollbar {
     width: 10px;
-    }
-  
+}
+
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 0.3rem #444; 
+    box-shadow: inset 0 0 0.3rem #444;
     width: 12px;
-    }
-   
+}
+
 ::-webkit-scrollbar-thumb {
-    background:#444; 
-    }
-  
+    background: #444;
+}
+
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #b10a79; 
-    }
+    background: #b10a79;
+}
